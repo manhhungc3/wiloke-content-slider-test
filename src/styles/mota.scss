@@ -20,6 +20,12 @@
 [dir=rtl] .wiloke-content-slide-test-wrapper .l\:30px { left: initial }
 [dir=rtl] .wiloke-content-slide-test-wrapper .r\:30px { right: initial }
 [dir=rtl] .wiloke-content-slide-test-wrapper .mr\:14px { margin-right: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .l\:10px\@\+sm { left: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .r\:10px\@\+sm { right: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pr\:20px { padding-right: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pl\:20px { padding-left: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pr\:pfs\(12px\,20px\) { padding-right: initial }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-left: initial }
 .wiloke-content-slide-test-wrapper .bg\:none\! { background: none !important }
 .wiloke-content-slide-test-wrapper .bgc\:\#eee { background-color: #eee }
 .wiloke-content-slide-test-wrapper .cur\:pointer { cursor: pointer }
@@ -179,6 +185,20 @@
 .wiloke-content-slide-test-wrapper .mih\:320px { min-height: 320px }
 .wiloke-content-slide-test-wrapper .miw\:253px { min-width: 253px }
 .wiloke-content-slide-test-wrapper .fz\:pfs\(18px\,45px\) { font-size: clamp(18px, 3.375vw + 4.5px, 45px) }
+.wiloke-content-slide-test-wrapper .jc\:flex-end { justify-content: flex-end }
+.wiloke-content-slide-test-wrapper .pt\:10px { padding-top: 10px }
+.wiloke-content-slide-test-wrapper .pr\:20px { padding-right: 20px }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pr\:20px { padding-left: 20px }
+.wiloke-content-slide-test-wrapper .pb\:10px { padding-bottom: 10px }
+.wiloke-content-slide-test-wrapper .pl\:20px { padding-left: 20px }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pl\:20px { padding-right: 20px }
+.wiloke-content-slide-test-wrapper .pt\:pfs\(5px\,10px\) { padding-top: clamp(5px, 0.625vw + 2.5px, 10px) }
+.wiloke-content-slide-test-wrapper .pr\:pfs\(12px\,20px\) { padding-right: clamp(12px, 1vw + 8px, 20px) }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pr\:pfs\(12px\,20px\) { padding-left: clamp(12px, 1vw + 8px, 20px) }
+.wiloke-content-slide-test-wrapper .pb\:pfs\(5px\,10px\) { padding-bottom: clamp(5px, 0.625vw + 2.5px, 10px) }
+.wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-left: clamp(12px, 1vw + 8px, 20px) }
+[dir=rtl] .wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-right: clamp(12px, 1vw + 8px, 20px) }
+.wiloke-content-slide-test-wrapper .whs\:nowrap { white-space: nowrap }
 @media (max-width:991px) { 
 .wiloke-content-slide-test-wrapper .d\:none\@\+md { display: none }
 .wiloke-content-slide-test-wrapper .jc\:center\@\+md { justify-content: center }
@@ -194,4 +214,10 @@
 @media (max-width:767px) { 
 .wiloke-content-slide-test-wrapper .fxw\:wrap\@\+sm { flex-wrap: wrap }
 .wiloke-content-slide-test-wrapper .p\:20px\@\+sm { padding: 20px }
-.wiloke-content-slide-test-wrapper .w\:100\%\@\+sm { width: 100% } }
+.wiloke-content-slide-test-wrapper .w\:100\%\@\+sm { width: 100% }
+.wiloke-content-slide-test-wrapper .l\:10px\@\+sm { left: 10px }
+[dir=rtl] .wiloke-content-slide-test-wrapper .l\:10px\@\+sm { right: 10px }
+.wiloke-content-slide-test-wrapper .b\:10px\@\+sm { bottom: 10px }
+.wiloke-content-slide-test-wrapper .r\:10px\@\+sm { right: 10px }
+[dir=rtl] .wiloke-content-slide-test-wrapper .r\:10px\@\+sm { left: 10px }
+.wiloke-content-slide-test-wrapper .p\:10px\@\+sm { padding: 10px } }
