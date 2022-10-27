@@ -1,7 +1,7 @@
 {
-  "name": "wiloke-post-categories-avenue",
-  "namespace": "WilokePostCategoriesAvenue",
-  "title": "Wiloke Categories List Widget Avenue",
+  "name": "wiloke-content-slide-test",
+  "namespace": "WilokeContentSlideTest",
+  "title": "Wiloke Categories Content Slide Test",
   "icon": "eicon-post",
   "category": {
     "title": "Wiloke",
@@ -10,9 +10,9 @@
   },
   "version": "1.0.19",
   "information": {
-    "Plugin Name": "Wiloke Categories List Widget Avenue",
+    "Plugin Name": "Wiloke Categories Content Slide Test",
     "Plugin URI": "https://wiloke.com",
-    "Description": "Wiloke Categories List Widget Avenue for Elementor",
+    "Description": "Wiloke Categories Content Slide Test for Elementor",
     "Version": "{{ version }}",
     "Author": "wiloke",
     "Author URI": "https://wiloke.com",
@@ -30,8 +30,8 @@
     "team member",
     "list"
   ],
-  "css": "https://wil-post-categories-avenue.netlify.app/styles/styles.css",
-  "js": "https://wil-post-categories-avenue.netlify.app/js/scripts.js",
+  "css": "https://wiloke-content-slide-test-1.netlify.app/styles/styles.css",
+  "js": "https://wiloke-content-slide-test-1.netlify.app/js/scripts.js",
   "libs": {
     "css": [],
     "js": []

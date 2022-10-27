@@ -1,6 +1,6 @@
 (function () {
   // @ComponentName
-  const componentName = "wiloke-post-categories-avenue";
+  const componentName = "wiloke-content-slide-test";
 
   async function init() {
     wiloke.loadStyle({
