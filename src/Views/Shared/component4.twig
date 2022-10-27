@@ -1,4 +1,5 @@
 {% set componentName = "wiloke-content-slide-test" %}
-<div class="ar:394/463 d:flex jc:center ai:center flxs:0 ov:hidden {{componentName}}-4" style="{{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
+<div class="ar:394/463 pos:relative d:flex jc:center ai:center flxs:0 ov:hidden {{componentName}}-4" style="{{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
+  <a href="{{item.link}}" class="pos:absolute ins:0"></a>
   <img class="w:100% h:100% obf:cover {{componentName}}-4__img" src="{{item.featuredImage}}" alt="">
 </div>

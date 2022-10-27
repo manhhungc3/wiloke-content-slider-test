@@ -2,7 +2,7 @@
 
 {% set length = content | length > 9 ? content | length : '0' ~ content | length %}
 
-<div class="p:70px p:20px@+sm bgc:#F0F0F0 bdrs:20px {{borderColor ? 'bd:1px_solid' : ''}} {{componentName}}-2" style="{{backgroundPrimary}} {{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
+<div class="p:70px p:20px@+sm bgc:#F0F0F0 bdrs:20px pos:relative {{borderColor ? 'bd:1px_solid' : ''}} {{componentName}}-2" style="{{backgroundPrimary}} {{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
 	<div class="d:flex fxw:wrap@+sm m:0_-30px">
 		<div class="w:45% w:100%@+sm p:0_30px flxs:0">
 			<div class="p:50px_0">
@@ -13,15 +13,19 @@
             {{length}}
           </span>
         </div>
-				<div class="titleTypo mt:20px ff:Poppins fz:40px fw:500 lh:1.5 {{componentName}}-2__title" sytle="{{titleTypo}}{{colorGray9}}">{{item.title}}</div>
+				<h2 class="m:0! p:0! fz:40px">
+          <a href="{{item.link}}" class="titleTypo mt:20px ff:Poppins c:#000 fz:40px fw:500 td:none! lh:1.5 {{componentName}}-2__title" style="{{titleTypo}}{{colorGray9}}">
+            {{item.title}}
+          </a>
+        </h2>
 				<div class="textTypo mt:20px ff:Poppins fz:18px fw:400 lh:1.5 c:#545454 {{componentName}}-2__text" style="{{textTypo}}{{colorGray7}}">{{item.text}}</div>
         <div class="d:flex ai:center mt:50px">
-          <div class="btn-prev cur:pointer flxs:0 w:40px h:40px bd:1px_solid_#000 bdrs:50% d:flex jc:center ai:center mr:10px {{componentName}}-2__iconPrev">
+          <div class="btn-prev wiloke-2-btnPrev cur:pointer flxs:0 w:40px h:40px bd:1px_solid_#000 bdrs:50% d:flex jc:center ai:center mr:10px {{componentName}}-2__iconPrev" style="{{colorGray9Variable}}">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
               <path d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM15 3.5L1 3.5V4.5L15 4.5V3.5Z" fill="{{colorSVGVr2Css}}"/>
             </svg>
           </div>
-          <div class="btn-next cur:pointer flxs:0 w:40px h:40px bd:1px_solid_#000 bdrs:50% d:flex jc:center ai:center {{componentName}}-3__iconNext">
+          <div class="btn-next wiloke-2-btnNext cur:pointer flxs:0 w:40px h:40px bd:1px_solid_#000 bdrs:50% d:flex jc:center ai:center {{componentName}}-3__iconNext" style="{{colorGray9Variable}}">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
               <path d="M14.3536 3.64645C14.5488 3.84171 14.5488 4.15829 14.3536 4.35355L11.1716 7.53553C10.9763 7.7308 10.6597 7.7308 10.4645 7.53553C10.2692 7.34027 10.2692 7.02369 10.4645 6.82843L13.2929 4L10.4645 1.17157C10.2692 0.976311 10.2692 0.659728 10.4645 0.464466C10.6597 0.269204 10.9763 0.269204 11.1716 0.464466L14.3536 3.64645ZM0 3.5L14 3.5V4.5L0 4.5L0 3.5Z" fill="{{colorSVGVr2Css}}"/>
             </svg>
@@ -29,7 +33,8 @@
         </div>
 			</div>
 		</div>
-		<div class="w:55% w:100%@+sm p:0_30px flxs:0">
+		<div class="w:55% w:100%@+sm p:0_30px flxs:0 pos:relative">
+      <a href="{{item.link}}" class="pos:absolute ins:0"></a>
 			<img class="ar:543.07/389.76 w:100% h:100% obf:cover {{componentName}}-2__img" src="{{item.featuredImage}}" alt="">
 		</div>
 	</div>

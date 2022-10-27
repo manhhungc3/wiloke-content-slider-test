@@ -1,13 +1,17 @@
 {% set componentName = "wiloke-content-slide-test" %}
 
-<div class="wiloke-3-content cur:pointer d:flex w:100% h:100% lh:1.5 bdrs:20px p:20px bgc:#FFF4EA {{componentName}}-3" style="{{backgroundPrimary}} {{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
+<div class="wiloke-3-content pos:relative cur:pointer d:flex w:100% h:100% lh:1.5 bdrs:20px p:20px bgc:#FFF4EA {{componentName}}-3" style="{{backgroundPrimary}} {{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
   <div class="wiloke-3-boxIcon bgc:#000 w:30px h:30px flxs:0 d:flex jc:center ai:center bdrs:50% mt:7px mr:14px {{componentName}}-3__boxIcon" style="{{backgroundSecondary}}">
     <span class="wiloke-3-icon d:flex jc:center ai:center fz:14px c:#fff {{componentName}}-3__icon" style="{{colorLight}}">
       <i class="{{item.icon}}"></i>
     </span>
   </div>
   <div>
-    <h2 class="wiloke-3-title titleTypo fz:18px c:#020428 m:0! {{componentName}}-3__title" style="{{titleTypo}}{{colorGray9}}">{{item.title}}</h2>
+    <h2 class="m:0! p:0! fz:18px">
+      <a href="{{item.link}}" class="wiloke-3-title titleTypo td:none! fz:18px c:#020428 {{componentName}}-3__title" style="{{titleTypo}}{{colorGray9}}">
+        {{item.title}}
+      </a>
+    </h2>
     <div class="wiloke-3-text textTypo fz:16px c:#3e3c3c lines-2 {{componentName}}-3__text" style="{{textTypo}}{{colorGray7}}">{{item.text}}</div>
   </div>
 

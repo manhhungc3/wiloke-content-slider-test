@@ -30,12 +30,12 @@ export const schema: Schema = [
           { type: 'media', name: 'featuredImage', label: 'Image',default: {
             url: '/wp-content/plugins/{{ name }}/src/Assets/Image/placeholder.jpeg'
           }},
-          { type: 'icons', name: 'icon', label: 'Icons', default: { value: 'far fa-user', library: 'fa-regular'} },
+          { type: 'icons', name: 'icon', label: 'Icons (For Variant 3 Only)', default: { value: 'far fa-user', library: 'fa-regular'} },
           { type: 'text', default: 'Activewear', name: 'title', label: 'Title' },
           { type: 'text', default: 'Lorem ipsum dolor sit amet consectetur.', name: 'text', label: 'Text' },
-          { type: 'text', default: '', name: 'link', label: 'Link' },
-          { type: 'text', default: 'Read More', name: 'buttonText', label: 'Button Text' },
-          { type: 'select', name: 'target', label: 'Target', default: 'self' , options: {
+          { type: 'text', default: '', name: 'link', label: 'Link (For Variant 1 Only)' },
+          { type: 'text', default: 'Read More', name: 'buttonText ', label: 'Button Text (For Variant 1 Only)' },
+          { type: 'select', name: 'target', label: 'Target (For Variant 1 Only)', default: 'self' , options: {
             blank: 'New tab',
             self: 'This tab',
           }},

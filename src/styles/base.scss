@@ -20,6 +20,12 @@ $componentName: "wiloke-content-slide-test";
     border: 0;
     vertical-align: middle;
   }
+
+  .wiloke-2-btnNext,
+  .wiloke-2-btnPrev {
+    border-color: var(--color-gray9, #000) !important;
+  }
+
   .wil-swiper1 {
     .swiper-button-next,
     .swiper-button-prev {
@@ -85,7 +91,14 @@ $componentName: "wiloke-content-slide-test";
   .wiloke-4-numberPage {
     color: var(--color-light, #fff);
   }
-
+  .wiloke-3-borderImageTop {
+    border-top-color: var(--color-primary, #F47708) !important;
+    border-left-color: var(--color-primary, #F47708) !important;
+  }
+  .wiloke-3-borderImageBottom {
+    border-bottom-color: var(--color-primary, #F47708) !important;
+    border-right-color: var(--color-primary, #F47708) !important;
+  }
   .contentBGActive {
     background-color: #F47708 !important;
     .wiloke-3-boxIcon {

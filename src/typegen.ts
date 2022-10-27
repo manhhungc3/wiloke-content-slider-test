@@ -9,7 +9,7 @@ icon: string | { url: string };
 title: string;
 text: string;
 link: string;
-buttonText: string;
+buttonText : string;
 target: string;
 }[];
 };
