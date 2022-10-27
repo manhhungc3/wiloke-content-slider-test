@@ -22,7 +22,7 @@
         <div></div>
         <div class="wiloke-3-mainTitle mainTitleTypo ff:Cabin fz:40px fw:500 lh:49px!" style="{{mainTitleTypo}}{{colorPrimaryVariable}}">{{mainTitle}}</div>
         <div>
-          {% set length = content.length > 9 ? content.length : '0' ~ content.length %}
+          {% set length = content | length > 9 ? content | length : '0' ~ content | length %}
           <span class="number-page-3" style="{{colorGray9Variable}}"></span>
           <span style="{{colorGray9Variable}}">/</span>
           <span style="{{colorGray7Variable}}">{{length}}</span>
