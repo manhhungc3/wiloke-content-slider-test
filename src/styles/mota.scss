@@ -26,6 +26,7 @@
 [dir=rtl] .wiloke-content-slide-test-wrapper .pl\:20px { padding-left: initial }
 [dir=rtl] .wiloke-content-slide-test-wrapper .pr\:pfs\(12px\,20px\) { padding-right: initial }
 [dir=rtl] .wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-left: initial }
+.lines-2 { -webkit-line-clamp: 2 }
 .wiloke-content-slide-test-wrapper .bg\:none\! { background: none !important }
 .wiloke-content-slide-test-wrapper .bgc\:\#eee { background-color: #eee }
 .wiloke-content-slide-test-wrapper .cur\:pointer { cursor: pointer }
@@ -199,6 +200,7 @@
 .wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-left: clamp(12px, 1vw + 8px, 20px) }
 [dir=rtl] .wiloke-content-slide-test-wrapper .pl\:pfs\(12px\,20px\) { padding-right: clamp(12px, 1vw + 8px, 20px) }
 .wiloke-content-slide-test-wrapper .whs\:nowrap { white-space: nowrap }
+.wiloke-content-slide-test-wrapper .m\:25px { margin: 25px }
 @media (max-width:991px) { 
 .wiloke-content-slide-test-wrapper .d\:none\@\+md { display: none }
 .wiloke-content-slide-test-wrapper .jc\:center\@\+md { justify-content: center }

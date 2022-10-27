@@ -1,6 +1,6 @@
 {% set componentName = "wiloke-content-slide-test" %}
 
-{% set length = content.length > 9 ? content.length : '0' ~ content.length %}
+{% set length = content | length > 9 ? content | length : '0' ~ content | length %}
 
 <div class="p:70px p:20px@+sm bgc:#F0F0F0 bdrs:20px {{borderColor ? 'bd:1px_solid' : ''}} {{componentName}}-2" style="{{backgroundPrimary}} {{borderWidth}} {{ borderStyle }} {{ borderColor }}{{ borderRadius }}">
 	<div class="d:flex fxw:wrap@+sm m:0_-30px">
