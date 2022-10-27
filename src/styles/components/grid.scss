@@ -1,0 +1,48 @@
+$componentName: "wiloke-post-categories-avenue";
+$defaultGap: 30px;
+@mixin handleGridItem($key, $screenWidth, $width, $gap, $opts) {
+  @if ($screenWidth == "default") {
+    margin-left: calc(var(--gap-#{$key}, $defaultGap) / -2);
+    margin-right: calc(var(--gap-#{$key}, $defaultGap) / -2);
+    margin-top: calc(var(--gap-#{$key}, $defaultGap) / -1);
+    > * {
+      padding-left: calc(var(--gap-#{$key}, $defaultGap) / 2);
+      padding-right: calc(var(--gap-#{$key}, $defaultGap) / 2);
+      margin-top: var(--gap-#{$key}, $defaultGap);
+      width: calc(100% / var(--col-#{$key}, 1));
+    }
+  } @else {
+    @media (min-width: #{$screenWidth}px) {
+      margin-left: calc(#{$gap} / -2);
+      margin-right: calc(#{$gap} / -2);
+      margin-top: calc(#{$gap} / -1);
+      > * {
+        padding-left: calc(#{$gap} / 2);
+        padding-right: calc(#{$gap} / 2);
+        margin-top: $gap;
+        width: calc(100% / #{$width});
+      }
+    }
+  }
+}
+
+@mixin createGridEqual($prefix, $options: ()) {
+  $defaultOptions: (
+    xs: "default",
+    sm: 768,
+    md: 992,
+    lg: 1200,
+  );
+  $opts: if(length($options) > 0, $options, $defaultOptions);
+  .#{$prefix}-grid {
+    display: flex;
+    flex-wrap: wrap;
+    @each $key, $screenWidth in $opts {
+      $width: var(--col-#{$key}, 1);
+      $gap: var(--gap-#{$key}, $defaultGap);
+      @include handleGridItem($key, $screenWidth, $width, $gap, $opts);
+    }
+  }
+}
+
+@include createGridEqual($componentName);

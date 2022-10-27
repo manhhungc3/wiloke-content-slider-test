@@ -1,0 +1,120 @@
+$componentName: "wiloke-post-categories-avenue";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.#{$componentName}-wrapper {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  .veda-image-cover::before {
+    content: "";
+    display: block;
+    padding-top: calc( 1 / (var(--aspect-ratio, 1.33))*100%);
+  }
+
+
+  img {
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+  }
+  .wil-swiper1 {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--color-gray9, #000) !important;
+    }
+    .swiper-pagination-bullet {
+      background-color: var(--color-primary, #000) !important;
+    }
+    .swiper-pagination-bullet-active-main {
+      background-color: var(--color-primary, #000) !important;
+    }
+
+    .wiloke-1-button {
+      color: var(--color-gray9,#000) !important;
+      background-color: var(--color-light, #fff) !important;
+      &:hover {
+        color: var(--color-light,#fff) !important;
+        background-color: var(--color-gray9, #000) !important;
+      }
+    }
+  }
+
+
+
+
+  .wiloke-3-mainTitle {
+    color: var(--color-primary, #000) !important;
+  }
+
+  .wiloke-3-title {
+    color: var(--color-gray9,);
+  }
+
+
+  .wil-swiper-4 {
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 27px !important;
+      margin: 7px 0px !important;
+      span {
+        display: block;
+        margin: 0 !important;
+        transform: unset !important;
+        position:unset !important;
+        width: 3px;
+        height: 27px;
+        border-radius: unset !important;
+      }
+      .swiper-pagination-bullet {
+        background-color: var(--color-gray9, #000) !important;
+        opacity: 1 !important;
+      }
+      .swiper-pagination-bullet-active-main {
+        background-color: var(--color-light, #fff) !important;
+      }
+    }
+  }
+  .wiloke-4-mainTitle,
+  .wiloke-4-mainText,
+  .wiloke-4-numberPage {
+    color: var(--color-light, #fff);
+  }
+
+  .contentBGActive {
+    background-color: #F47708 !important;
+    .wiloke-3-boxIcon {
+      background-color: #fff !important ;
+    }
+
+    .wiloke-3-icon {
+      color: #F47708 !important;
+    }
+    .wiloke-3-title,
+    .wiloke-3-text {
+      color: #fff !important;
+    }
+
+  }
+
+
+  .end {
+    opacity: 0.2;
+  }
+}
+.#{$componentName}-wrapper,
+.#{$componentName}-wrapper:before,
+.#{$componentName}-wrapper:after,
+.#{$componentName}-wrapper *,
+.#{$componentName}-wrapper *:before,
+.#{$componentName}-wrapper *:after {
+  box-sizing: border-box;
+  letter-spacing: 0 !important;
+  line-height: 1.5;
+}
+

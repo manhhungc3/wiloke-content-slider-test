@@ -1,0 +1,39 @@
+{
+  "name": "wiloke-post-categories-avenue",
+  "namespace": "WilokePostCategoriesAvenue",
+  "title": "Wiloke Categories List Widget Avenue",
+  "icon": "eicon-post",
+  "category": {
+    "title": "Wiloke",
+    "key": "wiloke-category",
+    "icon": "eicon-font"
+  },
+  "version": "1.0.19",
+  "information": {
+    "Plugin Name": "Wiloke Categories List Widget Avenue",
+    "Plugin URI": "https://wiloke.com",
+    "Description": "Wiloke Categories List Widget Avenue for Elementor",
+    "Version": "{{ version }}",
+    "Author": "wiloke",
+    "Author URI": "https://wiloke.com",
+    "License": "GPL-2.0+",
+    "License URI": "http://www.gnu.org/licenses/gpl-2.0.txt",
+    "Text Domain": "{{ name }}",
+    "Domain Path": "/languages",
+    "Tested up to": "5.6.2"
+  },
+  "keywords": [
+    "card",
+    "wiloke",
+    "table",
+    "team card",
+    "team member",
+    "list"
+  ],
+  "css": "https://wil-post-categories-avenue.netlify.app/styles/styles.css",
+  "js": "https://wil-post-categories-avenue.netlify.app/js/scripts.js",
+  "libs": {
+    "css": [],
+    "js": []
+  }
+}

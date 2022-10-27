@@ -1,0 +1,25 @@
+$componentName: "wiloke-post-categories-avenue";
+.wil-swiper {
+  position: relative;
+  .swiper-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 30px;
+  }
+  .swiper-button-prev {
+    left: -40px;
+  }
+  .swiper-button-next {
+    right: -40px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    &:after {
+      font-size: 34px;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: currentColor !important;
+    cursor: pointer;
+  }
+}

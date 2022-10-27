@@ -1,0 +1,59 @@
+{% set componentName = "wiloke-post-categories-avenue" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.css" />
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="js/scripts.js"></script>
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    html {
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      overflow: hidden;
+    }
+    .demo-section {
+      padding: 80px 0;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    .demo-section > h2 {
+      margin-top: 0;
+    }
+    .container {
+      box-sizing: border-box;
+      max-width: 1230px;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+  <title>{% block title %}{{ componentName }}{% endblock %}</title>
+</head>
+<body>
+  <div id="root">
+    {% block header %}
+      <header></header>
+    {% endblock %}
+
+    {% block body %}{% endblock %}
+
+    {% block footer %}
+      <footer></footer>
+    {% endblock %}
+  </div>
+</body>
+</html>
