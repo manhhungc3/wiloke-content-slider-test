@@ -57,7 +57,7 @@
               </svg>
             </div>
           </div>
-          {% set length = content.length > 9 ? content.length : '0' ~ content.length %}
+          {% set length = content | length > 9 ? content | length : '0' ~ content | length %}
           <div class="pos:absolute r:-50px b:0">
             <div class="wiloke-4-numberPage fz:25px number-page-4" style="{{colorLightVariable}}"></div>
             <div class="swiper-pagination"></div>
