@@ -209,6 +209,7 @@
 .wiloke-content-slide-test-wrapper .miw\:396px { min-width: 396px }
 .wiloke-content-slide-test-wrapper .mah\:320px { max-height: 320px }
 .wiloke-content-slide-test-wrapper .maw\:253px { max-width: 253px }
+.wiloke-content-slide-test-wrapper .fz\:pfs\(18px\,35px\) { font-size: clamp(18px, 2.125vw + 9.5px, 35px) }
 @media (max-width:991px) { 
 .wiloke-content-slide-test-wrapper .d\:none\@\+md { display: none }
 .wiloke-content-slide-test-wrapper .jc\:center\@\+md { justify-content: center }
