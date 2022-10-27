@@ -34,7 +34,7 @@ export const schema: Schema = [
           { type: 'text', default: 'Activewear', name: 'title', label: 'Title' },
           { type: 'text', default: 'Lorem ipsum dolor sit amet consectetur.', name: 'text', label: 'Text' },
           { type: 'text', default: '', name: 'link', label: 'Link' },
-          { type: 'text', default: 'Read More', name: 'buttonText ', label: 'Button Text (For Variant 1 Only)' },
+          { type: 'text', default: 'Read More', name: 'buttonText', label: 'Button Text (For Variant 1 Only)' },
           { type: 'select', name: 'target', label: 'Target (For Variant 1 Only)', default: 'self' , options: {
             blank: 'New tab',
             self: 'This tab',
