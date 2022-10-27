@@ -33,7 +33,7 @@ export const schema: Schema = [
           { type: 'icons', name: 'icon', label: 'Icons (For Variant 3 Only)', default: { value: 'far fa-user', library: 'fa-regular'} },
           { type: 'text', default: 'Activewear', name: 'title', label: 'Title' },
           { type: 'text', default: 'Lorem ipsum dolor sit amet consectetur.', name: 'text', label: 'Text' },
-          { type: 'text', default: '', name: 'link', label: 'Link (For Variant 1 Only)' },
+          { type: 'text', default: '', name: 'link', label: 'Link' },
           { type: 'text', default: 'Read More', name: 'buttonText ', label: 'Button Text (For Variant 1 Only)' },
           { type: 'select', name: 'target', label: 'Target (For Variant 1 Only)', default: 'self' , options: {
             blank: 'New tab',
