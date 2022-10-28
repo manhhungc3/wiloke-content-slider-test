@@ -41,14 +41,14 @@
 					</div>
 				</div>
         <div
-            class="wil-swiper pos:absolute t:0 r:0 h:100% w:40% w:100%@+md"
+            class="wil-swiper pos:absolute t:0 r:0 h:100% d:flex jc:center ai:center w:40% w:100%@+md"
             data-options='{
               slidesPerView: 4,
               direction: "vertical",
               grabCursor: true,
             }'
           >
-            <div class="swiper {{ componentName }}-swiper3 pos:absolute w:100% h:100% swiper-initialized swiper-vertical swiper-pointer-events">
+            <div class="swiper {{ componentName }}-swiper3 pos:absolute  w:100% swiper-initialized swiper-vertical swiper-pointer-events" style="height: calc(100% - 40px)">
               <div class="swiper-wrapper ">
                 {% for item in content %}
                   <div class="swiper-slide w:100% d:block h:auto!@+md">

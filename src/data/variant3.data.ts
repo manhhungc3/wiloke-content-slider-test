@@ -45,6 +45,15 @@ export const data: Data = {
         target: 'blank',
       },
 
+      {
+        featuredImage: 'https://anhdep123.com/wp-content/uploads/2020/05/h%C3%ACnh-bi%E1%BB%83n-%C4%91%E1%BA%B9p.jpg',
+        title: 'Dresses',
+        icon: 'far fa-bell-on',
+        text: 'Hôm nay là thứ 5',
+        link: '',
+        buttonText: 'Show Now',
+        target: 'blank',
+      },
     ]
 
   },

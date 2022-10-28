@@ -96,7 +96,7 @@
         if(swiper3) {
           const currentPage3El = el.querySelector('.number-page-3');
           const contentEls = el.querySelectorAll('.wiloke-3-content');
-
+          contentEls[0].classList.add('contentBGActive');
           contentEls.forEach((contentEl, index) => {
             function handleBackground() {
               BG3NodeList.forEach(el => el.style.opacity = 0);
@@ -104,7 +104,6 @@
             }
             currentPage3El.innerText = '01';
             contentEl.addEventListener('click', () => {
-
               currentPage3El.innerText = `${index + 1 > 9 ? `${index + 1}` : `0${index + 1}` }`;
               handleBackground();
               contentEls.forEach(contentEl => {
